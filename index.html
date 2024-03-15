@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW_4</title>
+    <title>HW_5</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -555,6 +555,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-block">
+          <p class="footer-soc-title">Subscribe</p>
+          <form class="footer-form">
+            <input
+              class="footer-form-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="btn footer-form-btn" type="submit">
+              Subscribe
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-sub"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- modal window -->
@@ -565,6 +582,65 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form" name="order_service"></form>
+        <label class="modal-form-label" for="order_name">Name</label>
+        <div class="modal-form-field">
+          <input
+            class="modal-form-input"
+            type="text"
+            name="order_name"
+            id="order_name"
+          />
+          <svg class="modal-form-icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        </div>
+        <label class="modal-form-label" for="order_phone">Phone</label>
+        <div class="modal-form-field">
+          <input
+            class="modal-form-input"
+            type="tel"
+            name="order_phone"
+            id="order_phone"
+          />
+          <svg class="modal-form-icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+        <label class="modal-form-label" for="order_email">Email</label>
+        <div class="modal-form-field">
+          <input
+            class="modal-form-input"
+            type="email"
+            name="order_email"
+            id="order_email"
+          />
+          <svg class="modal-form-icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </div>
+        <label class="modal-form-label" for="order_comment">Comment</label>
+        <textarea
+          class="modal-form-message"
+          name="order_comment"
+          id="order_comment"
+          placeholder="Text input"
+        ></textarea>
+        <label class="modal-form-check">
+          <input class="" type="checkbox" />
+          <span class="modal-form-check-desc">
+            I accept the terms and conditions of the
+            <a
+              class="modal-form-check-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Privacy Policy</a
+            >
+          </span>
+        </label>
+        <button class="btn modal-form-btn" type="submit">Send</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
